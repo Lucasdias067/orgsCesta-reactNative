@@ -4,8 +4,9 @@ import brocolis from '../../assets/frutas/Brócolis.png';
 import batata from '../../assets/frutas/Batata.png';
 import pepino from '../../assets/frutas/Pepino.png';
 import abobora from '../../assets/frutas/Abóbora.png';
+import { ICesta } from '../types/ICesta';
 
-export const cesta = {
+export const cesta: ICesta = {
   header: {
     title: 'Detalhe da cesta'
   },

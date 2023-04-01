@@ -3,14 +3,15 @@ import Header from './components/Header';
 import Details from './components/Details';
 import Item from './components/Item';
 import Texto from '../../components/Texto';
+import { ICesta } from '../../types/ICesta';
 
-export default function Cesta({ header, details, items }) {
+export default function Cesta({ header, details, items }: ICesta) {
   return (
     <>
       <FlatList
         data={items.list}
+        keyExtractor={({ name }) => name.toString()}
         renderItem={Item}
-        keyExtractor={({ name }) => name}
         ListHeaderComponent={() => (
           <>
             <Header {...header} />

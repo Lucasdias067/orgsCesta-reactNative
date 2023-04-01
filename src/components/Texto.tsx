@@ -1,6 +1,10 @@
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text, TextStyle } from 'react-native';
+import React, { ReactElement } from 'react';
 
-export default function Texto({ children, style }) {
+export default function Texto({ children, style }: {
+  children: ReactElement,
+  style?: TextStyle
+}) {
 
   let styled = styles.texto
 

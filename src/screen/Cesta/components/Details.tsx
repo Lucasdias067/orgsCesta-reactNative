@@ -1,7 +1,15 @@
 import { Image, StyleSheet, View, TouchableOpacity } from 'react-native';
 import Texto from '../../../components/Texto';
+import React, { ReactElement } from 'react';
 
-export default function Details({ name, farmName, logo, description, price, button }) {
+export default function Details({ name, farmName, logo, description, price, button }: {
+  name: ReactElement<string>;
+  farmName: ReactElement<string>;
+  logo: HTMLImageElement;
+  description: ReactElement<string>;
+  price: ReactElement<string>;
+  button: ReactElement<string>;
+}) {
   return (
     <>
       <Texto style={styles.nome}>{name}</Texto>

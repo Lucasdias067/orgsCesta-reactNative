@@ -1,10 +1,13 @@
 import { Dimensions, Image, StyleSheet } from 'react-native';
 import Texto from '../../../components/Texto';
-import topo from '../../../../assets/topo.png';
+import topo from '../../../../assets/frutas/topo.png';
+import React, { ReactElement } from 'react';
 
 const { width } = Dimensions.get('screen');
 
-export default function Header({ title }) {
+export default function Header({ title }: {
+  title: ReactElement<string>;
+}): JSX.Element {
 
   return (
     <>
